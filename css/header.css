@@ -1,0 +1,126 @@
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+/*	font-size: 0.8rem;
+	margin-right: 1.3rem;
+	margin-left: 1.3rem;*/
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: grey;
+}
+
+.nav-item {
+	padding-left: 5rem;
+	font-size: 1.5rem;
+}
+
+.books {
+	transform: scale(2.0);
+}
+
+.name_span {
+	padding-right: 1rem;
+}
+
+main {
+	display: flex;
+	box-sizing: border-box;
+	margin-top: 1rem;
+	flex-wrap: wrap;
+}
+
+#student-info {
+	margin-left: 0.7rem;
+}
+
+#students_list {
+	width: 20%;
+	margin-right: .4rem;
+	margin-left: 2rem;
+}
+
+#courses_list {
+	margin-right: 9rem;
+}
+
+#container2 {
+	border: 4px solid green;
+	box-sizing: border-box;
+	width: 600px;
+	/*height: 500px;*/
+	border-radius: 5%;
+}
+
+#container2 img{
+	width: 40%;
+	border-radius: 5px;
+	margin-bottom: 1rem;
+}
+
+#info-box {
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+}
+
+#info-box img{
+	width: 60px;
+	height: 60px;
+	border-radius: 5px;
+}
+
+.inside {
+	margin-left: 1rem;
+}
+
+.inside h1 {
+	font-size: 2rem;
+}
+
+.inside h2 {
+	font-size: 1.8rem;
+}
+
+.inside h3 {
+	font-size: 1.5rem;
+}
+
+hr {
+	height: 30px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px 0 0 0;
+	border-radius: 20px;
+}
+hr:before {
+	display: block;
+	content: "";
+	height: 30px;
+	margin-top: -31px;
+	border-style: solid;
+	border-color: black;
+	border-width: 0 0 1px 0;
+	border-radius: 20px;
+}
+
+.top_inside {
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.inside_form {
+	margin-top: 1rem;
+}
+
+.course_checkbox {
+	margin-left: 1rem;
+}

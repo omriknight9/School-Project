@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>School</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/project.css">
+
+</head>
+<body>
+	<header>
+		{% include 'header.php' %}
+	</header>
+
+	<main>
+		<nav id="students_list">
+			<h2>Students <a href="/student/add" class="btn btn-success">+</a></h2>
+			
+			{% for student in students %}
+				<a href="/student/{{student.id}}">
+					<div id="info-box">
+						<div>
+							<img src="/views/{{student.image_link}}" alt="">
+						</div>
+						<div id="student-info">
+							<p>{{student.name}}</p>
+							<p>{{student.email}}</p>
+						</div>
+
+					</div>
+				</a>
+			{% endfor %}		
+		</nav>
+	
+		<nav id="courses_list">
+			<h2>Courses <a href="/course/add" class="btn btn-success">+</a></h2>
+		
+			{% for course in courses %}
+				<a href="/course/{{course.id}}">
+					<div id="info-box">
+						<img src="/views/{{course.image_link}}" alt="" width=95>
+			    		<p style="margin-left: 1rem;">{{course.name}}</p>
+			    	</div>
+			    </a>
+			{% endfor %}
+				
+			</nav>
+
+		<div id="container"></div>
+	</main>
+		<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>
